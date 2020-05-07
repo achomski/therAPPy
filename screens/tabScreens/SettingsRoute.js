@@ -19,8 +19,6 @@ import ReactNativeSettingsPage, {
 } from 'react-native-settings-page';
 import 'react-native-gesture-handler';
 
-import { useNavigation } from '@react-navigation/native';
-
 
 class SettingsRoute extends Component {
     constructor() {
@@ -39,10 +37,10 @@ class SettingsRoute extends Component {
 	};
 
     render() {
-      
-      
+
+
         return (
-          
+
 
 
         <View style={{ flex: 1, backgroundColor: "#FFF0809" }}>
@@ -136,16 +134,16 @@ class SettingsRoute extends Component {
 
                   firebase.signOut();
 
-                  }, 
+                  },
                   style: "cancel"
-              
+
                 },
               ],
               { cancelable: false }
             );
 
-            
-            
+
+
           }}>
           <Text style={styles.signOut}>Sign Out</Text>
         </TouchableOpacity>
