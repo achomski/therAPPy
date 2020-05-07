@@ -63,7 +63,7 @@ export default class LoginBase extends Component {
 
             //=========== SIGN IN TURNED ON ===========\\
             firebase.login(this.state.email,this.state.password).then(()=> this.props.navigation.navigate('BottomTabs')).catch(function(error){
-
+            //login navigates to Dashboard
               var errorCode = error.code;
               var errorMessage = error.message;
               if (errorCode === 'auth/wrong-password') {
